@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap');
 
+:root {
+    --c-accent1: orange;
+    --c-accent2: lightblue;
+    --c-bg1: lightgray;
+
+    --standard-gap: 15px;
+
+    font-family: Mingzat, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-:root {
-    font-family: Mingzat, sans-serif;
-}
 
 h1,
 h2,
@@ -16,4 +23,61 @@ h4,
 h5,
 h6 {
     font-family: Newsreader, serif;
+}
+
+h2 {
+    padding-bottom: var(--standard-gap);
+}
+
+body {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+nav {
+    padding: var(--standard-gap);
+    grid-row: 1 / 3;
+    display: grid;
+    background-color: var(--c-accent2);
+}
+
+header {
+    padding: var(--standard-gap);
+    display: grid;
+}
+
+main {
+    padding: var(--standard-gap);
+    display: grid;
+    gap: var(--standard-gap);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+section.content {
+    display: flex;
+    background-color: var(--c-bg1);
+    gap: var(--standard-gap);
+}
+
+.card {
+    padding: var(--standard-gap);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.deco {
+    border-left: 5px solid var(--c-accent1);
+}
+
+aside {
+    padding: var(--standard-gap);
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement {
+    padding: var(--standard-gap)
 }
