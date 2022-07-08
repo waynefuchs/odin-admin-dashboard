@@ -6,50 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 <body>
     
     <nav>
         <div class="logo">
-            <img src="logo.png" alt="Dashboard Logo">
+            <img src="icon/view-dashboard.svg" alt="Dashboard">
             <h1>Dashboard</h1>
         </div>
 
         <section class="links-group">
-            <h3 class="link-home">Home</h3>
-            <h3 class="link-profile">Profile</h3>
-            <h3 class="link-messages">Messages</h3>
-            <h3 class="link-history">History</h3>
-            <h3 class="link-tasks">Tasks</h3>
-            <h3 class="link-communities">Communities</h3>
+            <a href="#"><h3 class="link-home">Home</h3></a>
+            <a href="#"><h3 class="link-profile">Profile</h3></a>
+            <a href="#"><h3 class="link-messages">Messages</h3></a>
+            <a href="#"><h3 class="link-history">History</h3></a>
+            <a href="#"><h3 class="link-tasks">Tasks</h3></a>
+            <a href="#"><h3 class="link-communities">Communities</h3></a>
         </section>
 
         <section class="links-group">
-            <h3 class="link-settings">Settings</h3>
-            <h3 class="link-support">Support</h3>
-            <h3 class="link-privacy">Privacy</h3>
+            <a href="#"><h3 class="link-settings">Settings</h3></a>
+            <a href="#"><h3 class="link-support">Support</h3></a>
+            <a href="#"><h3 class="link-privacy">Privacy</h3></a>
         </section>
     </nav>
 
     <header class="status-bar">
+        <img src="icon/magnify.svg" alt="Search">
         <input type="search" name="search" id="search">
         <div class="user-status">
-            <p>Bell</p>
-            <img src="" alt="User Icon">
+            <p><img src="icon/bell-ring-outline.svg" alt="Notifications"></p>
+            <img width="32px" src="user/singer.svg" alt="User Icon">
             <h3>Morgan Oakley</h3>
         </div>
     </header>
 
     <header class="status-actions">
         <div class="user-welcome">
-            <img src="" alt="User Image Large">
+            <img width="72px" src="user/singer.svg" alt="User Image Large">
             <p>Hi there,</p>
             <h1>Morgan Oakley</h1>    
         </div>
         <div class="user-action">
+            <form action="#">
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>    
+            </form>
         </div>
     </header>
 
@@ -61,38 +65,43 @@
                 <div class="card deco">
                     <h3>Super Cool Project</h3>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
 
                 <div class="card deco">
                     <h3>Less Cool Project</h3>
                     <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
 
                 <div class="card deco">
                     <h3>Impossible App</h3>
                     <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
 
                 <div class="card deco">
                     <h3>Easy Peasy App</h3>
                     <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
 
                 <div class="card deco">
                     <h3>Ad Blocker</h3>
                     <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
 
                 <div class="card deco">
                     <h3>Money Maker</h3>
                     <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                    <div class="project-icons"><img src="icon/star-plus-outline.svg" alt="Star"><img src="icon/eye-plus-outline.svg" alt="Watch"><img src="icon/source-fork.svg" alt="Fork"></div>
                 </div>
             </main>
         </section>
 
 
         <aside>
-
             <section class="annoucements">
                 <h2>Announcements</h2>
                 <section class="card">
@@ -115,33 +124,36 @@
 
             <section class="trending">
                 <h2>Trending</h2>
-                <section class="card">
+                <section class="trending-grid card">
+                    <img width="55rem" src="user/girl-woman-avatar-emoji-happy-people-kid.svg" alt="User Avatar">
                     <div class="trend-user">
-                        <img src="" alt="User Avatar">
                         <h4>@tegan</h4>
                         <p>World Peace Builder</p>
                     </div>
     
+                    <img width="55rem" src="user/swimmer.svg" alt="User Avatar">
                     <div class="trend-user">
-                        <img src="" alt="User Avatar">
                         <h4>@morgan</h4>
                         <p>Super Cool Project</p>
                     </div>
 
+                    <img width="55rem" src="user/pilot.svg" alt="User Avatar">
                     <div class="trend-user">
-                        <img src="" alt="User Avatar">
                         <h4>@kendall</h4>
                         <p>Life Changing App</p>
                     </div>
 
+                    <img src="user/woman.svg" alt="User Avatar">
                     <div class="trend-user">
-                        <img src="" alt="User Avatar">
                         <h4>@alex</h4>
                         <p>No Traffic Maker</p>
                     </div>
                 </section>
             </section>
         </aside>
+
+
+        <!-- <a href="https://iconscout.com/icons/pilot" target="_blank">Pilot Icon</a> by <a href="https://iconscout.com/contributors/adrien-coquet" target="_blank">Coquet Adrien</a> -->
 
     </section>
 
