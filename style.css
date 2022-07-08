@@ -156,8 +156,6 @@ aside {
     flex-direction: column;
 }
 
-
-
 main {
     display: grid;
     gap: var(--standard-gap);
